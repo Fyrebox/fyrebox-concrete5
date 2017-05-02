@@ -1,0 +1,10 @@
+<?php xml version="1.0"?>
+<schema version="0.3">
+	<table name="btFyrebox">
+		<field name="bID" type="I">
+			<unsigned/>
+			<key/>
+		</field>
+		<field name="quizId" type="C" size="15"></field>
+	</table>
+</schema>
