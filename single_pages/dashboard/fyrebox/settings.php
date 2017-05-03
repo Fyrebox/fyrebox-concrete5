@@ -10,10 +10,9 @@ $token = Core::make('token');
 	<div class="form-group">
 		<?php
         echo $form->label('api_key', t('Fyrebox API key').' *');
-        echo $form->text('api_key', Config::get('fyrebox.settings.api_key'), [
-			'style' => 'max-width: 700px',
-		]);
-        ?>
+        echo $form->text('api_key', Config::get('fyrebox.settings.api_key'), ['style' => 'max-width: 700px',]);
+				echo t('You can find your Fyrebox API key on your <a href="https://www.fyrebox.com/account" target="_blank">Fyrebox account page</a>');
+				?>
 	</div>
 
 	<div class="ccm-dashboard-form-actions-wrapper">
