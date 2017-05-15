@@ -5,6 +5,6 @@
 			<unsigned/>
 			<key/>
 		</field>
-		<field name="quizId" type="C" size="15"></field>
+		<field name="quizId" type="C" size="21"></field>
 	</table>
 </schema>

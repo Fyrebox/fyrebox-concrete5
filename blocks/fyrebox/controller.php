@@ -3,10 +3,7 @@ namespace Concrete\Package\Fyrebox\Block\fyrebox;
 
 use Concrete\Core\Block\BlockController;
 use Concrete\Core\Config\Repository\Repository;
-use Concrete\Core\Error\Error;
-use Concrete\Core\Http\Request;
 use Concrete\Core\Package\Package;
-//use Concrete\Package\Fyrebox\Src\Fyrebox;
 use Core;
 use Exception;
 
@@ -19,7 +16,7 @@ class Controller extends BlockController
     protected $btTable = "btFyrebox";
     protected $btDefaultSet = "multimedia";
 
-    protected $api_key = "6da860b44162e4fbb33ce6905d83d3fb";
+    protected $api_key = "";
 
     public function getBlockTypeName()
     {
@@ -42,6 +39,9 @@ class Controller extends BlockController
     public function add(){
       $quizOptions = $this->getQuizzesOptions();
       $this->set('qOptions', $quizOptions);
+    }
+    public function edit(){
+      $this->add();
     }
 
     protected function getQuizzes()
@@ -77,26 +77,8 @@ class Controller extends BlockController
                 }
             }
         } catch (Exception $e) {
-            $quizOptions[''] = t('List not Availble');
+            $quizOptions[''] = t('Quizzes not Available');
         }
         return $quizOptions;
-    }
-
-
-	/**
-     * @return bool
-     */
-    protected function hasApiKey()
-    {
-        return !empty($this->getApiKey());
-    }
-
-	/**
-     * @return string
-     */
-    protected function getApiKey()
-    {
-        $config = Core::make(Repository::class);
-        return (string) $config->get('fyrebox.settings.api_key');
     }
 }

@@ -7,7 +7,7 @@ $token = Core::make('token');
 <div class="fyrebox-quiz fyb-<?php  echo $bID ?>" id="b<?php  echo $bID ?>">
 	<?php
 	if (!$quizId) {
-		echo '<p class="message">None of your quiz was selected</p>';
+		echo '<p class="message">'.t('None of your quiz was selected').'</p>';
 		$quizId="noquiz/selected";
 	}
 	?>
