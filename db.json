@@ -6,21 +6,24 @@
     "description": "My NFT",
     "external_url": "https://www.fyrebox.com",
     "image": "https://res.cloudinary.com/fyrebox/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1609303503/Fyrebox/SVG/roundLogo512.png",
-    "name": "My NFT 0"
+    "name": "My NFT 0",
+     "upl":2
   },
   {
     "id": 1,
     "description": "My NFT",
     "external_url": "https://www.fyrebox.com",
     "image": "https://res.cloudinary.com/fyrebox/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1609303503/Fyrebox/SVG/roundLogo512.png",
-    "name": "My NFT 1"
+    "name": "My NFT 1",
+      "upl":3
   },
   {
     "id": 2,
     "description": "My NFT",
     "external_url": "https://www.fyrebox.com",
     "image": "https://res.cloudinary.com/fyrebox/image/upload/ar_1:1,b_rgb:262c35,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1609303503/Fyrebox/SVG/roundLogo512.png",
-    "name": "My NFT 2"
+    "name": "My NFT 2",
+      "upl":4
   }
 ]
 }
